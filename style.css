@@ -47,7 +47,7 @@ a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 32px 52px;
+    padding: 0px 250px 32px 32px;
 }
 
 .nav {
@@ -127,8 +127,8 @@ a {
 .your-projects p {
     grid-column: 1 / 3;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    padding-top: 32px;
 }
 
 .card {
@@ -140,6 +140,7 @@ a {
     display: grid;
     grid-template-rows: 1fr 7fr;
     padding-bottom: 16px;
+    padding-top: 24px;
 }
 
 .announcement {
