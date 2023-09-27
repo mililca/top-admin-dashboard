@@ -44,6 +44,10 @@ a {
 .main-content {
     background-color: rgb(228, 228, 228);
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 32px 52px;
 }
 
 .nav {
@@ -103,4 +107,72 @@ a {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.your-projects {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 1fr;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px;
+    padding-right: 32px;
+}
+
+.your-projects p {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.ann-container {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    padding-bottom: 16px;
+}
+
+.announcement {
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 42px;
+}
+
+.ann-container p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.trend-container {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 42px;
+}
+
+.trend-container p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ann-container p,
+.trend-container p,
+.your-projects p {
+    font-size: 20px;
 }
